@@ -4,7 +4,7 @@
       
 The official repository of our [[Paper]](https://arxiv.org/pdf/2306.02747) at **ICML 2024**.
 
-![COREP](imgs/COREP_framework.pdf)
+![COREP](imgs/COREP_framework.png)
 
 COREP primarily employs a dual-GAT structure with a guided updating mechanism to learn a stable graph representation for states, termed as causal origin representation. By leveraging this representation, the learned policy exhibits resilience to non-stationarity. The overall framework of COREP is illustrated in the above figure.
 
