@@ -1,0 +1,6 @@
+numpy==1.22.0
+gym==0.23.1
+torch
+seaborn
+tensorboard
+torch_geometric

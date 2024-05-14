@@ -4,11 +4,14 @@ __pycache__/
 *.pkl
 *.zip
 *.egg-info/
-exps/
 .pylintrc
 tb
 run_*.py
 dataset
 temp/
+exps/
 wandb/
+model_files/
+bak/
 results/
+logs/
