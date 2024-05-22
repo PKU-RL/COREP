@@ -7,8 +7,6 @@ from utils import helpers as utl
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 def evaluate(args,
              policy,

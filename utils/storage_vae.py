@@ -3,8 +3,6 @@ import torch
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 class RolloutStorageVAE(object):
     def __init__(self, num_processes, max_trajectory_len, zero_pad, max_num_rollouts,

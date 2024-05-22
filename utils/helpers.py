@@ -14,6 +14,7 @@ from environments.parallel_envs import make_vec_envs
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+
 def reset_env(env, args, indices=None, state=None):
     """ env can be many environments or just one """
     # reset all environments

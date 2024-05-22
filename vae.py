@@ -5,17 +5,13 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 import torch.nn as nn
-
+from torch.nn.functional import gumbel_softmax
 from models.decoder import StateTransitionDecoder, RewardDecoder, TaskDecoder
 from models.encoder import Encoder
 from utils.helpers import get_task_dim, get_num_tasks
 from utils.storage_vae import RolloutStorageVAE
-
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-from torch.nn.functional import gumbel_softmax
 
 def gumbel_adjacency_matrix(node_embeddings, similarity_threshold, temperature, hard):
     node_norm = torch.norm(node_embeddings, p=2, dim=-1, keepdim=True)

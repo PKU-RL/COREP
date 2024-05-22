@@ -10,8 +10,6 @@ from torch_geometric.data import Data, Batch
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 class Encoder(nn.Module):
     def __init__(self,

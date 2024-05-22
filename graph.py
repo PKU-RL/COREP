@@ -5,8 +5,6 @@ import torch.nn.functional as F
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 def gumbel_adjacency_matrix(node_embeddings, similarity_threshold, temperature, hard):
     
