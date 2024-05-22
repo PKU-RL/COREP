@@ -24,8 +24,6 @@ except ImportError:
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 class Policy(nn.Module):
     def __init__(self,

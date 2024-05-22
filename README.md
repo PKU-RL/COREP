@@ -6,16 +6,27 @@ The official repository of our [[Paper]](https://arxiv.org/pdf/2306.02747) at **
 
 COREP primarily employs a dual-GAT structure with a guided updating mechanism to learn a stable graph representation for states, termed as causal origin representation. By leveraging this representation, the learned policy exhibits resilience to non-stationarity. The overall framework of COREP is illustrated in the above figure.
 
-## Installation
+## Install
 
-The main requirements can be found in `requirements.txt`. We also use the `dmc2gym` library to convert the deepmind control environment into an openai gym interface.
+1. Clone this repository and navigate to LLaVA folder
 
-To install the requirements, you can follow the instructions below:
-
+```bash
+git clone https://github.com/PKU-RL/COREP.git
+cd COREP
 ```
+
+2. Install Package
+
+```bash
 conda create -n COREP python=3.10 -y
 conda activate COREP
+pip install --upgrade pip  # enable PEP 660 support
 pip install -r requirements.txt
+```
+
+3. Install additional packages. We use the [dmc2gym](https://github.com/denisyarats/dmc2gym) library to convert the deepmind control environment into an openai gym interface.
+
+```bash
 pip install -e dmc2gym
 ```
 
@@ -56,7 +67,7 @@ tensorboard --logdir ./logs
 
 ## Acknowledgements
 
-Our codebase is built upon the [VariBAD](https://github.com/lmzintgraf/varibad) repository, which we have modified to implement COREP.
+Parts of the code are based on the [VariBAD](https://github.com/lmzintgraf/varibad) repository, which we have modified to implement COREP.
 
 ## Citation
 

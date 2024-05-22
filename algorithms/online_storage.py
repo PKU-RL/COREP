@@ -10,8 +10,6 @@ from utils import helpers as utl
 
 from utils.helpers import device
 
-# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 
 def _flatten_helper(T, N, _tensor):
     return _tensor.reshape(T * N, *_tensor.size()[2:])
