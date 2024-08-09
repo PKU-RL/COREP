@@ -1,6 +1,6 @@
 # 📄 Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation
       
-The official repository of our [[Paper]](https://arxiv.org/pdf/2306.02747) at **ICML 2024**.
+The official repository of our [[Paper]](https://openreview.net/pdf?id=WLGWMDtj8L) at **ICML 2024**.
 
 ![COREP](imgs/COREP_framework.png)
 
@@ -20,7 +20,7 @@ cd COREP
 ```bash
 conda create -n COREP python=3.10 -y
 conda activate COREP
-pip install --upgrade pip  # enable PEP 660 support
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -73,10 +73,13 @@ Parts of the code are based on the [VariBAD](https://github.com/lmzintgraf/varib
 
 If you find our work useful in your research and would like to cite our project, please use the following citation:
 ```
-@article{zhang2023tackling,
+@InProceedings{zhang2024tackling,
   title={Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation},
   author={Zhang, Wanpeng and Li, Yilin and Yang, Boyu and Lu, Zongqing},
-  journal={arXiv preprint arXiv:2306.02747},
-  year={2023}
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  pages={59264--59288},
+  year={2024},
+  volume={235},
+  publisher={PMLR}
 }
 ```
